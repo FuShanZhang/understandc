@@ -7,6 +7,7 @@ int main(void){
 	int space = 0;
 	int num = 0;
 	int ver = 0;
+	int other;
 	char c;
 	do{
 		c = getchar();
@@ -18,6 +19,7 @@ int main(void){
 		}else if(c == ' '){
 			space++;
 		}
-		printf("%d,%d,%d,%d\n",count,ver,num,space,count-ver-num-space );
-	}while(c == '\n');
+	}while(c != '\n');
+	other = count - space - ver - num - space;
+	printf("%d,%d,%d,%d,%d\n",count,ver,num,space,other);
 }
