@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(void){
-	char s;
+	int s;
 	int no;
 	int i = 0;
 	do{
@@ -17,11 +17,29 @@ int main(void){
 			puts("该整数为负数");
 		}
 
-		printf("输入.可显示循环次数");		scanf("%s",&s);
+		printf("输入1可以继续");		scanf("%d",&s);
 
-		if(s == '.'){
-			printf("%d\n",i );
-		}
-
-	}while(1 == 1);
+	}while(s == 1);
+	printf("谢谢使用");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
