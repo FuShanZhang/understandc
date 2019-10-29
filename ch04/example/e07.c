@@ -10,7 +10,7 @@ int main(void){
 		for(int space = 0 ; space< s-m; space++){
 			printf(" ");
 		}
-		for(int n =s; n>0 ; n--){
+		for(int n=s; n>0 ; n--){
 			printf("%s","*");
 		}
 		printf("\n");
