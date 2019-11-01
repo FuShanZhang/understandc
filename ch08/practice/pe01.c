@@ -10,6 +10,7 @@ enum isDouble judge(char arr[],int num){
 			return Is;
 			break;
 		}
+		
 	}
 	return Not;
 }
