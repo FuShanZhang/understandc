@@ -21,7 +21,6 @@ void mynot(void) {
 
 enum Triangle judgeTri(int a, int b , int c) {
 	if (a + b <= c || a + c <= b || b + c <= a || abs(a-b)>=c || abs(a-c)>=b || abs(b-c)>=a) {
-
         return not;
     }
     else if (a == b && b== c) {
@@ -29,8 +28,6 @@ enum Triangle judgeTri(int a, int b , int c) {
 
     } else if (a == b || a == c || b == c) {
         return twoEq;
-
-    
     } else {
         return normal;
     }
