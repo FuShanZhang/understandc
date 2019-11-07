@@ -2,6 +2,8 @@
 
 #include "intList.h"
 
+#include "singlyIntNode.h"
+
 int main() {
 
    /* IntList *pList = intListNew(10);
@@ -26,15 +28,22 @@ int main() {
 
    // printf("%d\n",intListGet(pList,20));*/
 
-   FILE *file = fopen("./data","r");
+  /* FILE *file = fopen("./data","r");
 
    IntList *display = deserialize(file);
 
-   intListDisplay(display);
+   intListDisplay(display);*/
 
     //fclose(file);
 
+    SinglyIntNode *head = singlyIntNodeCreate();
 
+
+    for (int i = 0; i < 20; ++i) {
+        singlyIntNodeAdd(head, i + 1);
+    }
+
+    singlyIntNodeDisplay(head);
 
 
     return 0;

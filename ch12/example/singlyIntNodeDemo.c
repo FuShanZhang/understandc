@@ -8,9 +8,12 @@ int main(void) {
         singlyIntNodeAdd(head, i + 1);
     }
 
-    singlyIntNodeDelete(head,0);
+    //singlyIntNodeUpdate(head,1,10);
+
+    printf("%d\n",singlyIntNodeGet(head,1));
 
     singlyIntNodeDisplay(head);
+
 
 
     //singlyIntNodeDestroy(head);
