@@ -14,6 +14,7 @@ IntList *intListNew(int initSize) {
 
 int intListDestroy(IntList *list) {
     free(list->data);
+
     free(list);
     return 1;
 }
