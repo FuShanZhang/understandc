@@ -6,9 +6,20 @@ int seqStackPush(IntList *list, int elem){
 }
 
 int seqStackPop(IntList *list){
-    return list->data[0];
+    int length = list->length;
+    int temp =  list->data[length - 1];
+    intListDelete(list,length -1);
+    return temp;
 }
 
 int seqStackIsEmpty(IntList *list){
     return list->length == 0;
+}
+
+int seqStackPeek(IntList *list){
+    return list->data[list->length - 1];
+}
+
+int seqStackSearch(IntList *list, int elem){
+
 }
